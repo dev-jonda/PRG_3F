@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PRG_ConsoleApp2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1259a0c55e10a39bc7784c98bbb8f702cd10cad8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bdc7a488febd3ea2cb639ca0436eb34078b3c9de")]
 [assembly: System.Reflection.AssemblyProductAttribute("PRG_ConsoleApp2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PRG_ConsoleApp2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
