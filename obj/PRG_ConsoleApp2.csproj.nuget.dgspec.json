@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jonas.bouse\\RiderProjects\\ConsoleApp2\\PRG_ConsoleApp2\\PRG_ConsoleApp2.csproj": {}
+    "C:\\Users\\jonas.bouse\\RiderProjects\\git\\repo\\PRG_3F\\PRG_ConsoleApp2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jonas.bouse\\RiderProjects\\ConsoleApp2\\PRG_ConsoleApp2\\PRG_ConsoleApp2.csproj": {
+    "C:\\Users\\jonas.bouse\\RiderProjects\\git\\repo\\PRG_3F\\PRG_ConsoleApp2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jonas.bouse\\RiderProjects\\ConsoleApp2\\PRG_ConsoleApp2\\PRG_ConsoleApp2.csproj",
+        "projectUniqueName": "C:\\Users\\jonas.bouse\\RiderProjects\\git\\repo\\PRG_3F\\PRG_ConsoleApp2.csproj",
         "projectName": "PRG_ConsoleApp2",
-        "projectPath": "C:\\Users\\jonas.bouse\\RiderProjects\\ConsoleApp2\\PRG_ConsoleApp2\\PRG_ConsoleApp2.csproj",
+        "projectPath": "C:\\Users\\jonas.bouse\\RiderProjects\\git\\repo\\PRG_3F\\PRG_ConsoleApp2.csproj",
         "packagesPath": "C:\\Users\\jonas.bouse\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jonas.bouse\\RiderProjects\\ConsoleApp2\\PRG_ConsoleApp2\\obj\\",
+        "outputPath": "C:\\Users\\jonas.bouse\\RiderProjects\\git\\repo\\PRG_3F\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

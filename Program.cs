@@ -51,6 +51,7 @@ class Program
         */
         
         // Elo rating
+        /*
         Console.WriteLine($"Zadejte vaše elo: ");
         int elo = int.Parse(Console.ReadLine());
         if (elo >= 1000)
@@ -68,8 +69,10 @@ class Program
             Console.WriteLine($"Váš rank je Bronz - elo: {elo}");
             Console.WriteLine($"Pro dosažení dalšího ranku Vám zbývá: {600 - elo}");
         }
+        */
         
         // Elo extended
+        /*
         Console.WriteLine($"Zadejte vaše extended elo: ");
         int elo_extended = int.Parse(Console.ReadLine());
         String rank;
@@ -87,9 +90,10 @@ class Program
         }
         Console.WriteLine($"Vaše elo: {elo}");
         Console.WriteLine($"Váš rank: {rank}");
-        
+        */
         
         // Switch - herní menu
+        /*
         Console.WriteLine("1. Pokračuj ve hře\n2. Ulož hru\n3. Načti hru\nVyberte číslo: ");
         int volba = int.Parse(Console.ReadLine());
         switch (volba)
@@ -107,12 +111,15 @@ class Program
                 Console.WriteLine("Zadejte číslo 1 až 3!");
                 break;
         }
+        */
         
         // Kalkulačka
+        /*
         Console.WriteLine("Zadej první číslo: ");
         double num1 = double.Parse(Console.ReadLine());
         Console.WriteLine("Zadej druhé číslo: ");
         double num2 = double.Parse(Console.ReadLine());
+        Console.WriteLine("1. Sčítání\n2. Odečítání\n3. Násobení\n 4. Dělení\n 5. Mocnění\n 6. Druhá mocnina (zadejte pouze první číslo a druhé dejte nula)\nVyberte číslo: ");
         int operation = int.Parse(Console.ReadLine());
         switch (operation)
         {
@@ -140,6 +147,58 @@ class Program
             case 6:
                 Console.WriteLine($"Výsledek Sqrt: {Math.Sqrt(num1)}");
                 break;
+        }
+        */
+        
+        // jojo
+        /*
+        bool isDoktor = true;
+        string clovek = isDoktor ? "Doktor" : "Pacient";
+        Console.WriteLine(clovek);
+        */
+        
+        // while cyklus
+        
+        string operation = "";
+        while (operation != "exit")
+        {
+            Console.WriteLine("Zadej první číslo: ");
+            double num1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("{+} Sčítání\n{-} Odečítání\n{*} Násobení\n{/} Dělení\n{Pow} Mocnění\n{Sqrt} Druhá mocnina (zadejte pouze první číslo a druhé dejte nula)\nVyberte operaci: ");
+            operation = Console.ReadLine();
+            Console.WriteLine("Zadej druhé číslo: ");
+            double num2 = double.Parse(Console.ReadLine());
+            
+            switch (operation)
+            {
+                // Sčítání
+                case "+": // nemusí být jenom čísla může být v uvozovkách i třeba string
+                    Console.WriteLine($"Výsledek sčítání: {num1 + num2}");
+                    break;
+                // Odečítání
+                case "-":
+                    Console.WriteLine($"Výsledek odčítání: {num1 - num2}");
+                    break;
+                // Násobení
+                case "*":
+                    Console.WriteLine($"Výsledek násobení: {num1 * num2}");
+                    break;
+                // Dělení
+                case "/":
+                    Console.WriteLine($"Výsledek dělení: {num1 / num2}");
+                    break;
+                // Mocnění
+                case "Pow":
+                    Console.WriteLine($"Výsledek Pow: {Math.Pow(num1, num2)}");
+                    break;
+                // Druhá odmocnina
+                case "Sqrt":
+                    Console.WriteLine($"Výsledek Sqrt: {Math.Sqrt(num1)}");
+                    break;
+                case "exit":
+                    Console.WriteLine("Ukončuji program");
+                    break;
+            }   
         }
     }
 }
