@@ -35,7 +35,9 @@ class Program
             Console.WriteLine("True");
         }
         */
-
+        
+        // Početní operace - sčítání a podmínky
+        /*
         int x = int.Parse(Console.ReadLine());
         int y = int.Parse(Console.ReadLine());
         if ((x + y) > 15)
@@ -45,6 +47,99 @@ class Program
         else
         {
             Console.WriteLine($"Součet je menší než 15, součet: {x +y}");
+        }
+        */
+        
+        // Elo rating
+        Console.WriteLine($"Zadejte vaše elo: ");
+        int elo = int.Parse(Console.ReadLine());
+        if (elo >= 1000)
+        {
+            Console.WriteLine($"Váš rank je Diamond - elo: {elo}");
+            Console.WriteLine($"Dosáhli jste nejvyššího ranku!");
+        }
+        else if (elo >= 600)
+        {
+            Console.WriteLine($"Váš rank je Gold - elo: {elo}");
+            Console.WriteLine($"Pro dosažení dalšího ranku Vám zbývá: {1000 - elo}");
+        }
+        else
+        {
+            Console.WriteLine($"Váš rank je Bronz - elo: {elo}");
+            Console.WriteLine($"Pro dosažení dalšího ranku Vám zbývá: {600 - elo}");
+        }
+        
+        // Elo extended
+        Console.WriteLine($"Zadejte vaše extended elo: ");
+        int elo_extended = int.Parse(Console.ReadLine());
+        String rank;
+        if (elo >= 1000)
+        {
+            rank = "Diamond";
+        }
+        else if (elo >= 600)
+        {
+            rank = "Gold";
+        }
+        else
+        {
+            rank = "Bronze";
+        }
+        Console.WriteLine($"Vaše elo: {elo}");
+        Console.WriteLine($"Váš rank: {rank}");
+        
+        
+        // Switch - herní menu
+        Console.WriteLine("1. Pokračuj ve hře\n2. Ulož hru\n3. Načti hru\nVyberte číslo: ");
+        int volba = int.Parse(Console.ReadLine());
+        switch (volba)
+        {
+            case 1:
+                Console.WriteLine("Pokračujeme ve hře...");
+                break;
+            case 2:
+                Console.WriteLine("Ukládám hru...");
+                break;
+            case 3:
+                Console.WriteLine("Načítám hru...");
+                break;
+            default:
+                Console.WriteLine("Zadejte číslo 1 až 3!");
+                break;
+        }
+        
+        // Kalkulačka
+        Console.WriteLine("Zadej první číslo: ");
+        double num1 = double.Parse(Console.ReadLine());
+        Console.WriteLine("Zadej druhé číslo: ");
+        double num2 = double.Parse(Console.ReadLine());
+        int operation = int.Parse(Console.ReadLine());
+        switch (operation)
+        {
+            // Sčítání
+            case 1:
+                Console.WriteLine($"Výsledek sčítání: {num1 + num2}");
+                break;
+            // Odečítání
+            case 2:
+                Console.WriteLine($"Výsledek odčítání: {num1 - num2}");
+                break;
+            // Násobení
+            case 3:
+                Console.WriteLine($"Výsledek násobení: {num1 * num2}");
+                break;
+            // Dělení
+            case 4:
+                Console.WriteLine($"Výsledek dělení: {num1 / num2}");
+                break;
+            // Mocnění
+            case 5:
+                Console.WriteLine($"Výsledek Pow: {Math.Pow(num1, num2)}");
+                break;
+            // Druhá odmocnina
+            case 6:
+                Console.WriteLine($"Výsledek Sqrt: {Math.Sqrt(num1)}");
+                break;
         }
     }
 }
