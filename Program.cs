@@ -1,4 +1,4 @@
-﻿namespace PRG_ConsoleApp2;
+﻿namespace PRG_3F;
 
 class Program
 {
@@ -157,8 +157,31 @@ class Program
         Console.WriteLine(clovek);
         */
         
-        // while cyklus
+        // Mocnění a odpocnění
+        /*
+        double zaklad = 5;
+        double exponent = 2;
+
+        // Výpočet 5 na druhou (5²)
+        double vysledekMocniny = Math.Pow(zaklad, exponent); 
+        Console.WriteLine(vysledekMocniny); // Výpis: 25
+
+        // Rychlá alternativa pro druhou mocninu (často efektivnější):
+        double naDruhou = zaklad * zaklad;
+
+        // Druhá odmocnina z 25 (√25)
+        double druhaOdmocnina = Math.Sqrt(25); // Výsledek: 5
+
+        // Třetí odmocnina z 8 (³√8)
+        double tretiOdmocnina = Math.Cbrt(8); // Výsledek: 2
+
+        // Pátá odmocnina z 32 (⁵√32)
+        double n = 5;
+        double pataOdmocnina = Math.Pow(32, 1.0 / n); // Výsledek: 2
+        */
         
+        // while cyklus
+        /*
         string operation = "";
         while (operation != "exit")
         {
@@ -198,7 +221,27 @@ class Program
                 case "exit":
                     Console.WriteLine("Ukončuji program");
                     break;
-            }   
-        }
+            }
+            */
+            // Test1
+            /*
+            int vek = 18;
+                    bool maVIP = false;
+                    if (vek >= 18)
+                    {
+                        Console.WriteLine("Vstup povolen");
+                    } else if (maVIP)
+                    {
+                        Console.WriteLine("Vstup povolen s doprovodem");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Vstup zamítnut");
+                    }
+            */
+            // pole
+
+            int[] pole = [3, 2, 6, 9];
+            Console.WriteLine(pole[1]); // když nenapíšeme index, tak nám to vypíše adresu v paměti
     }
 }
