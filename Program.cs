@@ -1,4 +1,6 @@
-﻿namespace PRG_3F;
+﻿using System.Globalization;
+
+namespace PRG_3F;
 
 class Program
 {
@@ -240,8 +242,45 @@ class Program
                     }
             */
             // pole
-
+            /*
             int[] pole = [3, 2, 6, 9];
             Console.WriteLine(pole[1]); // když nenapíšeme index, tak nám to vypíše adresu v paměti
+            */
+            // 2D pole
+            /*
+            int add = 0;
+            int[,] array = new int[3, 3];
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    array[i, j] = add;
+                    add++;
+                }
+            }
+            
+            foreach (int cislo in array)
+            {
+                Console.WriteLine(cislo);
+            }
+            
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    Console.Write(array[i, j] + "");
+                }
+
+                Console.WriteLine();
+            }
+            */
+            // random
+
+            
+            for (int i = 0; i < 5; i++)
+            {
+                Random random = new Random(); //zadame seed, muzeme mit na vice compech stejne random cislo
+                Console.WriteLine(random.Next(-66666,999999999));
+            }
     }
 }
