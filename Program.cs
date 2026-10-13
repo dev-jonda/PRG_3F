@@ -275,12 +275,78 @@ class Program
             }
             */
             // random
-
-            
+            /*
             for (int i = 0; i < 5; i++)
             {
                 Random random = new Random(); //zadame seed, muzeme mit na vice compech stejne random cislo
                 Console.WriteLine(random.Next(-66666,999999999));
+            }
+            */
+            // Number guesser
+            
+            Console.WriteLine("1. Lehká (10 pokusů)\n2. Střední (7 pokusů)\n3. Těžká (4 pokusy)\nZvol obtížnost: ");
+            int volba = int.Parse(Console.ReadLine());
+            Random random = new Random();
+            switch (volba)
+            {
+                case 1:
+                    for (int i = 10; i > 0 ; i--)
+                    {
+                        int hledane_cislo = random.Next(0, 10);
+                        Console.WriteLine("Zadej pokus: ");
+                        int pokus = int.Parse(Console.ReadLine());
+                        if (pokus == hledane_cislo)
+                        {
+                            Console.WriteLine("Našli jste číslo: "+ hledane_cislo +" Počet zbývajících pokusů byl: "+ i);
+                            i = 0;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Číslo jste neuhodli");
+                        }
+                    }
+                    break;
+                case 2:
+                    for (int i = 10; i > 0 ; i--)
+                    {
+                        int hledane_cislo = random.Next(0, 10);
+                        Console.WriteLine("Zadej pokus: ");
+                        int pokus = int.Parse(Console.ReadLine());
+                        if (pokus == hledane_cislo)
+                        {
+                            Console.WriteLine("Našli jste číslo: "+ hledane_cislo +" Počet zbývajících pokusů byl: "+ i);
+                            i = 0;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Číslo jste neuhodli");
+                        }
+                        
+                        
+                    }
+                    break;
+                case 3:
+                    for (int i = 10; i > 0 ; i--)
+                    {
+                        int hledane_cislo = random.Next(0, 10);
+                        Console.WriteLine("Zadej pokus: ");
+                        int pokus = int.Parse(Console.ReadLine());
+                        if (pokus == hledane_cislo)
+                        {
+                            Console.WriteLine("Našli jste číslo: "+ hledane_cislo +" Počet zbývajících pokusů byl: "+ i);
+                            i = 0;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Číslo jste neuhodli");
+                        }
+                        
+                        
+                    }
+                    break;
+                default:
+                    Console.WriteLine("Zadejte číslo 1 až 3!");
+                    break;
             }
     }
 }
